@@ -13,5 +13,5 @@ exec('git config --global user.name', (error, stdout, stderr) => {
         console.error(`Error out: ${stderr}`);
         return;
     }
-    console.log(`User name in Git: ${stdout.trim()}`);
+    console.log(`Hello, ${stdout.trim()}`);
 });
