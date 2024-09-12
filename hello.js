@@ -4,7 +4,7 @@ const { exec } = require('child_process');//exec - функція з модул�
 //const exec = child_process.exec;
 
 //Виконуэмо команду, яка вертає ім'я користувача Git
-exec('git config --global user.name', (error, stdout, stderr) => {
+exec('git config --local user.name', (error, stdout, stderr) => {
     if (error) {
         console.error(`Error: ${error.message}`);
         return;
